@@ -6,9 +6,6 @@ import {
   ChevronRight,
   Play,
   Star,
-  Moon,
-  Sun,
-  Menu,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {

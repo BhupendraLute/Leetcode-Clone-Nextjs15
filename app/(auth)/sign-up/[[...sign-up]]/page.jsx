@@ -1,8 +1,12 @@
 import { SignUp } from "@clerk/nextjs"
 
+export const metadata = {
+  title: "Sign Up",
+};
+
 const SignupPage = () => {
   return (
-    <SignUp />
+    <SignUp forceRedirectUrl="/" signInForceRedirectUrl="/" />
   )
 }
 
