@@ -2,10 +2,16 @@
   "name": "leetcode-clone-nextjs",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "scripts": {
-    "dev": "docker compose up -d && next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev --turbopack",
+    "dev:db": "docker compose up -d",
+    "dev:all": "docker compose up -d && next dev --turbopack",
+    "build": "next build",
     "start": "next start",
+    "start:all": "docker compose up -d && next start",
     "lint": "eslint"
   },
   "dependencies": {
